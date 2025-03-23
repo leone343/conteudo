@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Liberado Após Anúncio</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; padding: 50px; }
+        #continue-btn { display: none; padding: 10px 20px; font-size: 16px; background-color: green; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Clique no botão abaixo e veja um anúncio para continuar</h2>
+    <button onclick="openAd()" style="padding: 10px; font-size: 16px;">Ver Anúncio</button>
+
+    <p id="message"></p>
+    <button id="continue-btn" onclick="window.location.href='https://seulinkfinal.com'">Ir para o Site</button>
+
+    <script>
+        function openAd() {
+            let directLink = "https://whoushex.top/4/8437370"; // Seu Direct Link
+            window.open(directLink, "_blank"); // Abre o anúncio em nova aba
+            
+            document.getElementById("message").textContent = "Após visualizar o anúncio, clique abaixo:";
+            document.getElementById("continue-btn").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>
